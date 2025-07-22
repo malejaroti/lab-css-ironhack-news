@@ -233,3 +233,21 @@ header {
       width: 90%;
     }
 }
+
+
+@media (min-width: 760px) and (max-width: 1024px)  {
+  .navbar{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .articles-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .article {
+    width: 45%;
+    
+  }
+}
