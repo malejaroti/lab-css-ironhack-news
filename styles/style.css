@@ -197,12 +197,11 @@ nav img {
 
 /* Write your CSS below */
 @media (width < 480px) {
-
   nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .navbar {
     display: none;
@@ -210,23 +209,6 @@ nav img {
 
   nav img {
     display: block;
-  }
-
-  nav img:hover { 
-    border: 1px solid white;
-  }
-
- nav:hover {
-  background-color: pink;
-  }
-
-  nav:hover .navbar{
-    display: block;
-    position: absolute;
-    background-color: white;
-    top: 100%; /* debajo del ícono */
-    left: 0;
-    z-index: 999;
   }
 }
 
@@ -276,15 +258,21 @@ nav img {
 }
 
 @media (min-width: 760px) and (max-width: 1024px) {
+
   .navbar {
+    width: 100%;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+  .navbar li {
+    width: 100%;
+    align-self: center;
   }
 
   .articles-container {
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
   }
 
