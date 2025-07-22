@@ -98,7 +98,7 @@ nav img {
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  background-color: blue
+  /* background-color: blue; */
 }
 
 .navbar li {
@@ -119,8 +119,6 @@ nav img {
   color: #fff;
   font-weight: bold;
 }
-
-
 
 /* Articles */
 .main-article {
@@ -199,17 +197,36 @@ nav img {
 
 /* Write your CSS below */
 @media (width < 480px) {
+
+  nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .navbar {
+    display: none;
+  }
+
   nav img {
     display: block;
   }
-  nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  nav img:hover { 
+    border: 1px solid white;
   }
-  .navbar {
-    display: none;
-    /* height: 10px; */
+
+ nav:hover {
+  background-color: pink;
+  }
+
+  nav:hover .navbar{
+    display: block;
+    position: absolute;
+    background-color: white;
+    top: 100%; /* debajo del ícono */
+    left: 0;
+    z-index: 999;
   }
 }
 
