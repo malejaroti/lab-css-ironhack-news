@@ -210,6 +210,14 @@ nav img {
   nav img {
     display: block;
   }
+  
+    nav:hover img {
+      display: none;
+  }
+
+  nav:hover .navbar {
+    display: block;
+  }
 }
 
 @media (width < 760px) {
@@ -258,7 +266,6 @@ nav img {
 }
 
 @media (min-width: 760px) and (max-width: 1024px) {
-
   .navbar {
     width: 100%;
     flex-direction: row;
